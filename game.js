@@ -30,13 +30,21 @@ $(".btn").click(function() {
     checkAnswer(userClickPattern.length - 1);
 });
 
-$(document).keypress(function () {
-    if(!start) {
-      $("#level-title").html("Level " + level);
-      nextSequence();
-      start = true;
+$(document).keypress(function() {
+  if (!start) {
+    $("#level-title").html("Level " + level);
+    nextSequence();
+    start = true;
   }
 });
+
+$("h1").click(function() {
+  if (!start) {
+    $("#level-title").html("Level " + level);
+    nextSequence();
+    start = true;
+  }
+})
 
 // playSound
 function playSound(button) {
