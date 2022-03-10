@@ -44,7 +44,7 @@ $("h1").click(function() {
     nextSequence();
     start = true;
   }
-})
+});
 
 // playSound
 function playSound(button) {
